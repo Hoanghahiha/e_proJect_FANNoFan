@@ -332,7 +332,7 @@
         Selectpicker.DEFAULTS = {
             noneSelectedText: 'Nothing selected',
             noneResultsText: 'No results matched {0}',
-            countSelectedText: function(numSelected, numTotal) {
+            countSelectedText: function(numSelected) {
                 return (numSelected == 1) ? '{0} item selected' : '{0} items selected';
             },
             maxOptionsText: function(numAll, numGroup) {
@@ -795,7 +795,7 @@
                     if ((max.length > 1 && selectedItems.length > max[1]) || (max.length == 1 && selectedItems.length >= 2)) {
                         notDisabled = this.options.hideDisabled ? ', [disabled]' : '';
                         var totalCount = $selectOptions.not('[data-divider="true"], [data-hidden="true"]' + notDisabled).length,
-                            tr8nText = (typeof this.options.countSelectedText === 'function') ? this.options.countSelectedText(selectedItems.length, totalCount) : this.options.countSelectedText;
+                            tr8nText = (typeof this.options.countSelectedText === 'function') ? this.options.countSelectedText(selectedItems.length) : this.options.countSelectedText;
                         title = tr8nText.replace('{0}', selectedItems.length.toString()).replace('{1}', totalCount.toString());
                     }
                 }

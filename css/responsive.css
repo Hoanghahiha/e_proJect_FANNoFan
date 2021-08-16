@@ -13,12 +13,14 @@
      nav.navbar.bootsnav .navbar-header{
          width: 100%;
     }
+     .displaynav{
+         display: none;
+     }
      .navbar-light .navbar-toggler{
          border-color: #b0b435;
          color: #010101;
          border-radius: 0px;
          margin-right: 7px;
-         padding-top: 6px;
          padding-top: 6px;
          float: left;
          margin-top: 20px;
