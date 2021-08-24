@@ -1,4 +1,4 @@
-
+/* Show Password*/
 // step 1
 const ipcElement = document.querySelector('#InputPassword1')
 const btcElement = document.querySelector('#btnPassword')
@@ -32,7 +32,7 @@ btdElement.addEventListener('click', function() {
 })
 
 
-
+/* Read more*/
 
 function myFunction() {
     var dots = document.getElementById("dots");
@@ -49,3 +49,14 @@ function myFunction() {
         moreText.style.display = "inline";
     }
 }
+
+/* Ranger Slider*/
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+    output.innerHTML = this.value;
+}
+
+
