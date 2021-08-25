@@ -27,12 +27,7 @@ function ready() {
 }
 
 function purchaseClicked() {
-    alert('Review cart and complete payment information')
-    var cartItems = document.getElementsByClassName('cart-items')[0]
-    while (cartItems.hasChildNodes()) {
-        cartItems.removeChild(cartItems.firstChild)
-    }
-    updateCartTotal()
+    alert('You must login or register first')
 }
 
 function removeCartItem(event) {
@@ -73,13 +68,9 @@ function addItemToCart(title, price, imageSrc) {
     var cartRowContents = `
         <div class="cart-item cart-column">
             <img class="cart-item-image" src="${imageSrc}" width="100" height="100">
-            <span class="cart-item-title">${title}</span>
+            <span class="cart-item-title font-weight-bold">${title}</span>
         </div>
-        <span class="cart-price cart-column">${price}</span>
-        <div class="cart-quantity cart-column">
-            <input class="cart-quantity-input" type="number" value="1">
-            <button class="btn btn-danger" type="button">REMOVE</button>
-        </div>`
+        <span class="cart-price cart-column">${price} x 1</span>`
     cartRow.innerHTML = cartRowContents
     cartItems.append(cartRow)
     cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeCartItem)
@@ -101,4 +92,75 @@ function updateCartTotal() {
     total = Math.round(total * 100) / 100
     document.getElementsByClassName('cart-total-price')[0].innerText = '$' + ((total) + (total*0.02))
     document.getElementsByClassName('cart-subtotal-price')[0].innerText = '$' + (total)
+}
+
+
+
+
+
+
+/* Heart Click */
+(function () {
+    const heart = document.getElementById("heart");
+    heart.addEventListener("click", function () {
+        heart.classList.toggle("red");
+    });
+})();
+(function () {
+    const heart = document.getElementById("heart1");
+    heart.addEventListener("click", function () {
+        heart.classList.toggle("red");
+    });
+})();
+(function () {
+    const heart = document.getElementById("heart2");
+    heart.addEventListener("click", function () {
+        heart.classList.toggle("red");
+    });
+})();
+
+/* Like Click */
+(function () {
+    const heart = document.getElementById("like");
+    heart.addEventListener("click", function () {
+        heart.classList.toggle("red");
+    });
+})();
+(function () {
+    const heart = document.getElementById("like1");
+    heart.addEventListener("click", function () {
+        heart.classList.toggle("red");
+    });
+})();
+(function () {
+    const heart = document.getElementById("like2");
+    heart.addEventListener("click", function () {
+        heart.classList.toggle("red");
+    });
+})();
+
+
+/* Login alert */
+function myFunctionalert() {
+    alert("You must login or register first")
+}
+/* Checkout alert */
+function mycheckoutalert(){
+    alert("Thank you for using our product. Your order will be responded within the next 24 hours. You are being redirected to the product page")
+}
+
+
+/* remove div */
+
+function myFunctionremove() {
+    var myobj = document.getElementById("remove");
+    myobj.remove();
+}
+function myFunctionremove1() {
+    var myobj = document.getElementById("remove1");
+    myobj.remove();
+}
+function myFunctionremove2() {
+    var myobj = document.getElementById("remove2");
+    myobj.remove();
 }

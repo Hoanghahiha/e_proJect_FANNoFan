@@ -100,7 +100,7 @@
     <div class="container">
         <div class="input-group">
             <span class="input-group-addon"><i class="fa fa-search"></i></span>
-            <input type="text" class="form-control" placeholder="What product you want to search?">
+            <input type="text" class="form-control font-weight-bold" placeholder="What product you want to search?">
             <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
         </div>
     </div>
@@ -123,7 +123,7 @@
 
             <div class="collapse navbar-collapse" id="navbar-menu1">
                 <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
-                    <li class="nav-item"><img src="images/ceiling-fans-.png" height="108" alt=""></li>
+                    <li class="nav-item"><img src="images/ceiling-fans.png" height="108" alt=""></li>
                 </ul>
             </div>
 
@@ -215,11 +215,9 @@
                                 <div class="toolbar-sorter-right">
                                     <span>Sort by </span>
                                     <select id="basic3" class="selectpicker show-tick form-control" data-placeholder="$ USD">
-									<option data-display="Select">Nothing</option>
-									<option value="1">Popularity</option>
-									<option value="2">High Price → Low Price</option>
-									<option value="3">Low Price → High Price</option>
-									<option value="4">Best Selling</option>
+									<option data-display="Select" data-filter="*">Nothing</option>
+									<option value="1" data-filter="mostpeople">Popularity</option>
+									<option value="4" data-filter="selling">Best Selling</option>
 								</select>
                                 </div>
                                 <p>Showing all 9 results</p>
@@ -240,201 +238,246 @@
                             <div class="tab-content">
                                 <div role="tabpanel" class="tab-pane fade show active" id="grid-view">
                                     <div class="row">
-                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4" data-group="mostpeople">
                                             <div class="products-single fix">
-                                                <div class="box-img-hover">
-                                                    <div class="type-lb">
-                                                        <p class="sale">Sale</p>
+                                                <div class="shop-item">
+                                                    <div class="box-img-hover">
+                                                        <div class="type-lb">
+                                                            <p class="new">New</p>
+                                                        </div>
+                                                        <span class="shop-item-title" hidden>Black Blades Ceiling Fans</span>
+                                                        <img class="shop-item-image img-fluid" src="images/img-pro-01.jpg">
+                                                        <div class="mask-icon">
+                                                            <ul>
+                                                                <li><a href="shop-detail.html" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
+                                                                <li><a href="wishlist.html" data-toggle="tooltip" data-placement="right" title="Wishlist"><i class="far fa-heart"></i></a></li>
+                                                            </ul>
+                                                        </div>
                                                     </div>
-                                                    <img src="images/img-pro-01.jpg" class="img-fluid" alt="Image">
-                                                    <div class="mask-icon">
-                                                        <ul>
-                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
-                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
-                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
-                                                        </ul>
-                                                        <a class="cart" href="#">Add to Cart</a>
+                                                    <div class="shop-item-details">
+                                                        <span class="shop-item-price" hidden>$157.99</span>
+                                                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
                                                     </div>
-                                                </div>
-                                                <div class="why-text">
-                                                    <h4>Black Blades Ceiling Fans</h4>
-                                                    <h5> $157.99</h5>
+                                                    <div class="why-text">
+                                                        <h4>Black Blades Ceiling Fans</h4>
+                                                        <h5> $157.99</h5>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
                                             <div class="products-single fix">
-                                                <div class="box-img-hover">
-                                                    <div class="type-lb">
-                                                        <p class="new">New</p>
+                                                <div class="shop-item">
+                                                    <div class="box-img-hover">
+                                                        <div class="type-lb">
+                                                            <p class="sale">Sale</p>
+                                                        </div>
+                                                        <span class="shop-item-title" hidden>Blade LED Standard Ceiling Fan</span>
+                                                        <img class="shop-item-image img-fluid" src="images/img-pro-02.jpg">
+                                                        <div class="mask-icon">
+                                                            <ul>
+                                                                <li><a href="shop-detail1.html" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
+                                                                <li><a href="wishlist.html" data-toggle="tooltip" data-placement="right" title="Wishlist"><i class="far fa-heart"></i></a></li>
+                                                            </ul>
+                                                        </div>
                                                     </div>
-                                                    <img src="images/img-pro-02.jpg" class="img-fluid" alt="Image">
-                                                    <div class="mask-icon">
-                                                        <ul>
-                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
-                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
-                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
-                                                        </ul>
-                                                        <a class="cart" href="#">Add to Cart</a>
+                                                    <div class="shop-item-details">
+                                                        <span class="shop-item-price" hidden>$229.99</span>
+                                                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
                                                     </div>
-                                                </div>
-                                                <div class="why-text">
-                                                    <h4>Blade LED Standard Ceiling Fan</h4>
-                                                    <h5> $229.99</h5>
+                                                    <div class="why-text">
+                                                        <h4>Blade LED Standard Ceiling Fan</h4>
+                                                        <h5> $229.99</h5>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
                                             <div class="products-single fix">
-                                                <div class="box-img-hover">
-                                                    <div class="type-lb">
-                                                        <p class="sale">Sale</p>
+                                                <div class="shop-item">
+                                                    <div class="box-img-hover">
+                                                        <div class="type-lb">
+                                                            <p class="sale">Sale</p>
+                                                        </div>
+                                                        <span class="shop-item-title" hidden>Oil Rubbed Bronze Ceiling Fan</span>
+                                                        <img class="shop-item-image img-fluid" src="images/img-pro-03.jpg">
+                                                        <div class="mask-icon">
+                                                            <ul>
+                                                                <li><a href="shop-detail2.html" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
+                                                                <li><a href="wishlist.html" data-toggle="tooltip" data-placement="right" title="Wishlist"><i class="far fa-heart"></i></a></li>
+                                                            </ul>
+                                                        </div>
                                                     </div>
-                                                    <img src="images/img-pro-03.jpg" class="img-fluid" alt="Image">
-                                                    <div class="mask-icon">
-                                                        <ul>
-                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
-                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
-                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
-                                                        </ul>
-                                                        <a class="cart" href="#">Add to Cart</a>
+                                                    <div class="shop-item-details">
+                                                        <span class="shop-item-price" hidden>$264.99</span>
+                                                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
                                                     </div>
-                                                </div>
-                                                <div class="why-text">
-                                                    <h4>Oil Rubbed Bronze Ceiling Fan</h4>
-                                                    <h5> $264.99</h5>
+                                                    <div class="why-text">
+                                                        <h4>Oil Rubbed Bronze Ceiling Fan</h4>
+                                                        <h5> $264.99</h5>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
                                             <div class="products-single fix">
-                                                <div class="box-img-hover">
-                                                    <div class="type-lb">
-                                                        <p class="new">New</p>
+                                                <div class="shop-item">
+                                                    <div class="box-img-hover">
+                                                        <div class="type-lb">
+                                                            <p class="sale">Sale</p>
+                                                        </div>
+                                                        <span class="shop-item-title" hidden>Brumfield 3 - Blade Ceiling Fan</span>
+                                                        <img class="shop-item-image img-fluid" src="images/img-pro-04.jpg">
+                                                        <div class="mask-icon">
+                                                            <ul>
+                                                                <li><a href="shop-detail3.html" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
+                                                                <li><a href="wishlist.html" data-toggle="tooltip" data-placement="right" title="Wishlist"><i class="far fa-heart"></i></a></li>
+                                                            </ul>
+                                                        </div>
                                                     </div>
-                                                    <img src="images/instagram-img-01.jpg" class="img-fluid" alt="Image">
-                                                    <div class="mask-icon">
-                                                        <ul>
-                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
-                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
-                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
-                                                        </ul>
-                                                        <a class="cart" href="#">Add to Cart</a>
+                                                    <div class="shop-item-details">
+                                                        <span class="shop-item-price" hidden>$258.40</span>
+                                                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
                                                     </div>
-                                                </div>
-                                                <div class="why-text">
-                                                    <h4>Wood Ceiling Fan</h4>
-                                                    <h5> $299.79</h5>
+                                                    <div class="why-text">
+                                                        <h4>Brumfield 3 - Blade Ceiling Fan</h4>
+                                                        <h5> $258.40</h5>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
                                             <div class="products-single fix">
-                                                <div class="box-img-hover">
-                                                    <div class="type-lb">
-                                                        <p class="sale">Sale</p>
+                                                <div class="shop-item">
+                                                    <div class="box-img-hover">
+                                                        <div class="type-lb">
+                                                            <p class="sale">Sale</p>
+                                                        </div>
+                                                        <span class="shop-item-title" hidden>Tree Fan Hayataki</span>
+                                                        <img class="shop-item-image img-fluid" src="images/gallery-img-02.jpg">
+                                                        <div class="mask-icon">
+                                                            <ul>
+                                                                <li><a href="shop-detail3.html" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
+                                                                <li><a href="wishlist.html" data-toggle="tooltip" data-placement="right" title="Wishlist"><i class="far fa-heart"></i></a></li>
+                                                            </ul>
+                                                        </div>
                                                     </div>
-                                                    <img src="images/instagram-img-02.jpg" class="img-fluid" alt="Image">
-                                                    <div class="mask-icon">
-                                                        <ul>
-                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
-                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
-                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
-                                                        </ul>
-                                                        <a class="cart" href="#">Add to Cart</a>
+                                                    <div class="shop-item-details">
+                                                        <span class="shop-item-price" hidden>$158.40</span>
+                                                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
                                                     </div>
-                                                </div>
-                                                <div class="why-text">
-                                                    <h4>Oil Fan</h4>
-                                                    <h5> $199.99</h5>
+                                                    <div class="why-text">
+                                                        <h4>Tree Fan Hayataki</h4>
+                                                        <h5> $158.40</h5>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
                                             <div class="products-single fix">
-                                                <div class="box-img-hover">
-                                                    <div class="type-lb">
-                                                        <p class="sale">Sale</p>
+                                                <div class="shop-item">
+                                                    <div class="box-img-hover">
+                                                        <div class="type-lb">
+                                                            <p class="sale">Sale</p>
+                                                        </div>
+                                                        <span class="shop-item-title" hidden>Charge Fan Hayataki</span>
+                                                        <img class="shop-item-image img-fluid" src="images/instagram-img-03.jpg">
+                                                        <div class="mask-icon">
+                                                            <ul>
+                                                                <li><a href="shop-detail3.html" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
+                                                                <li><a href="wishlist.html" data-toggle="tooltip" data-placement="right" title="Wishlist"><i class="far fa-heart"></i></a></li>
+                                                            </ul>
+                                                        </div>
                                                     </div>
-                                                    <img src="images/instagram-img-03.jpg" class="img-fluid" alt="Image">
-                                                    <div class="mask-icon">
-                                                        <ul>
-                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
-                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
-                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
-                                                        </ul>
-                                                        <a class="cart" href="#">Add to Cart</a>
+                                                    <div class="shop-item-details">
+                                                        <span class="shop-item-price" hidden>$599.99</span>
+                                                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
                                                     </div>
-                                                </div>
-                                                <div class="why-text">
-                                                    <h4>Fan without the propeller</h4>
-                                                    <h5> $599.99</h5>
+                                                    <div class="why-text">
+                                                        <h4>Charge Fan Hayataki</h4>
+                                                        <h5> $599.99</h5>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
                                             <div class="products-single fix">
-                                                <div class="box-img-hover">
-                                                    <div class="type-lb">
-                                                        <p class="sale">Sale</p>
+                                                <div class="shop-item">
+                                                    <div class="box-img-hover">
+                                                        <div class="type-lb">
+                                                            <p class="sale">Sale</p>
+                                                        </div>
+                                                        <span class="shop-item-title" hidden>Table Fan Mitsubishi</span>
+                                                        <img class="shop-item-image img-fluid" src="images/instagram-img-04.jpg">
+                                                        <div class="mask-icon">
+                                                            <ul>
+                                                                <li><a href="shop-detail3.html" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
+                                                                <li><a href="wishlist.html" data-toggle="tooltip" data-placement="right" title="Wishlist"><i class="far fa-heart"></i></a></li>
+                                                            </ul>
+                                                        </div>
                                                     </div>
-                                                    <img src="images/instagram-img-04.jpg" class="img-fluid" alt="Image">
-                                                    <div class="mask-icon">
-                                                        <ul>
-                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
-                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
-                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
-                                                        </ul>
-                                                        <a class="cart" href="#">Add to Cart</a>
+                                                    <div class="shop-item-details">
+                                                        <span class="shop-item-price" hidden>$999.79</span>
+                                                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
                                                     </div>
-                                                </div>
-                                                <div class="why-text">
-                                                    <h4>Tree Fan</h4>
-                                                    <h5> $599.79</h5>
+                                                    <div class="why-text">
+                                                        <h4>Table Fan Mitsubishi</h4>
+                                                        <h5> $999.79</h5>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
                                             <div class="products-single fix">
-                                                <div class="box-img-hover">
-                                                    <div class="type-lb">
-                                                        <p class="sale">Sale</p>
+                                                <div class="shop-item">
+                                                    <div class="box-img-hover">
+                                                        <div class="type-lb">
+                                                            <p class="sale">Sale</p>
+                                                        </div>
+                                                        <span class="shop-item-title" hidden>Tree Fan Midea</span>
+                                                        <img class="shop-item-image img-fluid" src="images/instagram-img-05.jpg">
+                                                        <div class="mask-icon">
+                                                            <ul>
+                                                                <li><a href="shop-detail3.html" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
+                                                                <li><a href="wishlist.html" data-toggle="tooltip" data-placement="right" title="Wishlist"><i class="far fa-heart"></i></a></li>
+                                                            </ul>
+                                                        </div>
                                                     </div>
-                                                    <img src="images/instagram-img-05.jpg" class="img-fluid" alt="Image">
-                                                    <div class="mask-icon">
-                                                        <ul>
-                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
-                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
-                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
-                                                        </ul>
-                                                        <a class="cart" href="#">Add to Cart</a>
+                                                    <div class="shop-item-details">
+                                                        <span class="shop-item-price" hidden>$399.79</span>
+                                                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
                                                     </div>
-                                                </div>
-                                                <div class="why-text">
-                                                    <h4>Charged Fan</h4>
-                                                    <h5> $999.79</h5>
+                                                    <div class="why-text">
+                                                        <h4>Tree Fan Midea</h4>
+                                                        <h5> $399.79</h5>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
                                             <div class="products-single fix">
-                                                <div class="box-img-hover">
-                                                    <div class="type-lb">
-                                                        <p class="new">New</p>
+                                                <div class="shop-item">
+                                                    <div class="box-img-hover">
+                                                        <div class="type-lb">
+                                                            <p class="sale">Sale</p>
+                                                        </div>
+                                                        <span class="shop-item-title" hidden>Air Conditioner Fan Mitsubishi</span>
+                                                        <img class="shop-item-image img-fluid" src="images/instagram-img-06.jpg">
+                                                        <div class="mask-icon">
+                                                            <ul>
+                                                                <li><a href="shop-detail3.html" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
+                                                                <li><a href="wishlist.html" data-toggle="tooltip" data-placement="right" title="Wishlist"><i class="far fa-heart"></i></a></li>
+                                                            </ul>
+                                                        </div>
                                                     </div>
-                                                    <img src="images/instagram-img-06.jpg" class="img-fluid" alt="Image">
-                                                    <div class="mask-icon">
-                                                        <ul>
-                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
-                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
-                                                            <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
-                                                        </ul>
-                                                        <a class="cart" href="#">Add to Cart</a>
+                                                    <div class="shop-item-details">
+                                                        <span class="shop-item-price" hidden>$599.79</span>
+                                                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
                                                     </div>
-                                                </div>
-                                                <div class="why-text">
-                                                    <h4>Steam Fan</h4>
-                                                    <h5> $399.79</h5>
+                                                    <div class="why-text">
+                                                        <h4>Air Conditioner Fan Mitsubishi</h4>
+                                                        <h5> $599.79</h5>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -453,8 +496,7 @@
                                                         <div class="mask-icon">
                                                             <ul>
                                                                 <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
-                                                                <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
-                                                                <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
+                                                                <li><a href="#" data-toggle="tooltip" data-placement="right" title="Wishlist"><i class="far fa-heart"></i></a></li>
                                                             </ul>
 
                                                         </div>
@@ -466,7 +508,7 @@
                                                     <h4>36'' Petra 4 - Blade Retractable Blades Ceiling Fan with Wall Control and Light Kit Included</h4>
                                                     <h5> <del>$ 197.99</del> $ 157.99</h5>
                                                     <p>This retractable blades ceiling fan with a wall switch will be a wonderful choice for an industrial room. It is multi-functional in that it can diffuse light to the room and cool the air as well. Both the fixture and the body are metal in industrial design.</p>
-                                                    <a class="btn hvr-hover" href="#">Add to Cart</a>
+                                                    <a class="btn hvr-hover" href="login.html" onclick="myFunctionalert()">Add to Cart</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -483,8 +525,7 @@
                                                         <div class="mask-icon">
                                                             <ul>
                                                                 <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
-                                                                <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
-                                                                <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
+                                                                <li><a href="#" data-toggle="tooltip" data-placement="right" title="Wishlist"><i class="far fa-heart"></i></a></li>
                                                             </ul>
 
                                                         </div>
@@ -496,7 +537,7 @@
                                                     <h4>44'' Canup 5 - Blade LED Standard Ceiling Fan with Wall Control and Light Kit Included</h4>
                                                     <h5> <del>$ 498.00</del> $215.99</h5>
                                                     <p>This ceiling fan is designed for smaller rooms and shorter ceilings. Its sleek profile incorporates LED down lighting to enhance the form and function.</p>
-                                                    <a class="btn hvr-hover" href="#">Add to Cart</a>
+                                                    <a class="btn hvr-hover" href="login.html" onclick="myFunctionalert()">Add to Cart</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -513,8 +554,7 @@
                                                         <div class="mask-icon">
                                                             <ul>
                                                                 <li><a href="#" data-toggle="tooltip" data-placement="right" title="View"><i class="fas fa-eye"></i></a></li>
-                                                                <li><a href="#" data-toggle="tooltip" data-placement="right" title="Compare"><i class="fas fa-sync-alt"></i></a></li>
-                                                                <li><a href="#" data-toggle="tooltip" data-placement="right" title="Add to Wishlist"><i class="far fa-heart"></i></a></li>
+                                                                <li><a href="#" data-toggle="tooltip" data-placement="right" title="Wishlist"><i class="far fa-heart"></i></a></li>
                                                             </ul>
 
                                                         </div>
@@ -526,7 +566,7 @@
                                                     <h4>62'' Centre Market Place 8 - Blade LED Standard Ceiling Fan with Remote Control</h4>
                                                     <h5> <del>$ 230.00</del> $264.99</h5>
                                                     <p>When you buy a Joss & Main 62'' Centre Market Place 8 - Blade LED Standard Ceiling Fan with Remote Control and Light Kit Included online from Wayfair, we make it as easy as possible for you to find out when your product will be delivered.</p>
-                                                    <a class="btn hvr-hover" href="#">Add to Cart</a>
+                                                    <a class="btn hvr-hover" href="login.html" onclick="myFunctionalert()">Add to Cart</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -540,7 +580,7 @@
                     <div class="product-categori">
                         <div class="search-product">
                             <form action="#">
-                                <input class="form-control" placeholder="Search here..." type="text">
+                                <input class="form-control" placeholder="Search here..." type="text" required>
                                 <button type="submit"> <i class="fa fa-search"></i> </button>
                             </form>
                         </div>
@@ -625,207 +665,212 @@
         </div>
     </div>
     <!-- End Shop Page -->
+    <script>
+        function myFunctionalert() {
+            alert("You must login or register first")
+        }
+    </script>
 
-    <!-- Start Instagram Feed  -->
-    <div class="instagram-box">
-        <div class="main-instagram owl-carousel owl-theme">
-            <div class="item">
-                <div class="ins-inner-box">
-                    <img src="images/instagram-img-01.jpg" alt="" />
-                    <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+<!-- Start Instagram Feed  -->
+<div class="instagram-box">
+    <div class="main-instagram owl-carousel owl-theme">
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="images/instagram-img-01.jpg" alt="" />
+                <div class="hov-in">
+                    <a href="https://www.instagram.com/fannofan8/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="images/instagram-img-02.jpg" alt="" />
+                <div class="hov-in">
+                    <a href="https://www.instagram.com/fannofan8/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="images/instagram-img-03.jpg" alt="" />
+                <div class="hov-in">
+                    <a href="https://www.instagram.com/fannofan8/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="images/instagram-img-04.jpg" alt="" />
+                <div class="hov-in">
+                    <a href="https://www.instagram.com/fannofan8/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="images/instagram-img-05.jpg" alt="" />
+                <div class="hov-in">
+                    <a href="https://www.instagram.com/fannofan8/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="images/instagram-img-06.jpg" alt="" />
+                <div class="hov-in">
+                    <a href="https://www.instagram.com/fannofan8/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="images/instagram-img-07.jpg" alt="" />
+                <div class="hov-in">
+                    <a href=https://www.instagram.com/fannofan8/#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="images/instagram-img-08.jpg" alt="" />
+                <div class="hov-in">
+                    <a href="https://www.instagram.com/fannofan8/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="images/instagram-img-09.jpg" alt="" />
+                <div class="hov-in">
+                    <a href="https://www.instagram.com/fannofan8/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="ins-inner-box">
+                <img src="images/instagram-img-05.jpg" alt="" />
+                <div class="hov-in">
+                    <a href="https://www.instagram.com/fannofan8/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Instagram Feed  -->
+
+<!-- Start Footer  -->
+<footer>
+    <div class="footer-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-top-box">
+                        <h3>Business Time</h3>
+                        <ul class="list-time">
+                            <li>Monday - Friday: 08.00am to 05.00pm</li> <li>Saturday: 10.00am to 08.00pm</li> <li>Sunday: <span>Closed</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-top-box">
+                        <h3>Newsletter</h3>
+                        <form class="newsletter-box">
+                            <div class="form-group">
+                                <input class="" type="email" name="Email" placeholder="Email Address*" required>
+                                <i class="fa fa-envelope"></i>
+                            </div>
+                            <button class="btn hvr-hover" type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-top-box">
+                        <h3>Social Media</h3>
+                        <p>About us with</p>
+                        <ul>
+                            <li><a href="https://www.facebook.com/"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="https://twitter.com/?lang=en"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.google.org/"><i class="fab fa-google-plus" aria-hidden="true"></i></a></li>
+                            <li><a href="https://rss.com/"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.pinterest.com/"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.whatsapp.com/?lang=en"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="item">
-                <div class="ins-inner-box">
-                    <img src="images/instagram-img-02.jpg" alt="" />
-                    <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+            <hr>
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-widget">
+                        <h4>About FANNoFan Shop</h4>
+                        <p>FANoFAN Company is manufacturing and selling Fans. We manufacture fans for many different needs of our customers. From Ceiling Fans to Table Fans to Exhaust Fans, we manufacture all types of Fans.</p>
+                        <p>With global headquarters and an extensive network of logistics hubs and customer service centers, we’re here to create that feeling of home for everyone, anywhere.</p>
                     </div>
                 </div>
-            </div>
-            <div class="item">
-                <div class="ins-inner-box">
-                    <img src="images/instagram-img-03.jpg" alt="" />
-                    <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-link">
+                        <h4>Information</h4>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact-us.html">Customer Service</a></li>
+                            <li><a href="contact-us.html">Our Sitemap</a></li>
+                            <li><a href="about.html">Terms &amp; Conditions</a></li>
+                            <li><a href="about.html">Privacy Policy</a></li>
+                            <li><a href="checkout.html">Delivery Information</a></li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-            <div class="item">
-                <div class="ins-inner-box">
-                    <img src="images/instagram-img-04.jpg" alt="" />
-                    <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="ins-inner-box">
-                    <img src="images/instagram-img-05.jpg" alt="" />
-                    <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="ins-inner-box">
-                    <img src="images/instagram-img-06.jpg" alt="" />
-                    <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="ins-inner-box">
-                    <img src="images/instagram-img-07.jpg" alt="" />
-                    <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="ins-inner-box">
-                    <img src="images/instagram-img-08.jpg" alt="" />
-                    <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="ins-inner-box">
-                    <img src="images/instagram-img-09.jpg" alt="" />
-                    <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="ins-inner-box">
-                    <img src="images/instagram-img-05.jpg" alt="" />
-                    <div class="hov-in">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <div class="footer-link-contact">
+                        <h4>Contact Us</h4>
+                        <ul>
+                            <li>
+                                <p><i class="fas fa-map-marker-alt"></i>Address: Thon 3 - Trung Mau Commune<br>Gia Lam District<br> Ha Noi Capital </p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-phone-square"></i>Phone: <a href="tel:+1-888705770">+84 393 946 293</a></p>
+                            </li>
+                            <li>
+                                <p><i class="fas fa-envelope"></i>Email: <a href="mailto:contactinfo@gmail.com">hatavn93@gmail.com</a></p>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- End Instagram Feed  -->
+</footer>
+<!-- End Footer  -->
+
+<!-- Start copyright  -->
+<div class="footer-copyright">
+    <p class="footer-company">All Rights Reserved. &copy; 2021 <a href="#">-FANNoFan Shop</a>-Design By :
+        <a href="https://html.design/">Hoang Ha</a></p>
+</div>
+<!-- End copyright  -->
 
 
-    <!-- Start Footer  -->
-    <footer>
-        <div class="footer-main">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-12 col-sm-12">
-                        <div class="footer-top-box">
-                            <h3>Business Time</h3>
-                            <ul class="list-time">
-                                <li>Monday - Friday: 08.00am to 05.00pm</li> <li>Saturday: 10.00am to 08.00pm</li> <li>Sunday: <span>Closed</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12 col-sm-12">
-                        <div class="footer-top-box">
-                            <h3>Newsletter</h3>
-                            <form class="newsletter-box">
-                                <div class="form-group">
-                                    <input class="" type="email" name="Email" placeholder="Email Address*" />
-                                    <i class="fa fa-envelope"></i>
-                                </div>
-                                <button class="btn hvr-hover" type="submit">Submit</button>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12 col-sm-12">
-                        <div class="footer-top-box">
-                            <h3>Social Media</h3>
-                            <p>About us with</p>
-                            <ul>
-                                <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fab fa-google-plus" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <hr>
-                <div class="row">
-                    <div class="col-lg-4 col-md-12 col-sm-12">
-                        <div class="footer-widget">
-                            <h4>About FANNoFan Shop</h4>
-                            <p>FANoFAN Company is manufacturing and selling Fans. We manufacture fans for many different needs of our customers. From Ceiling Fans to Table Fans to Exhaust Fans, we manufacture all types of Fans.</p>
-                            <p>With global headquarters and an extensive network of logistics hubs and customer service centers, we’re here to create that feeling of home for everyone, anywhere.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12 col-sm-12">
-                        <div class="footer-link">
-                            <h4>Information</h4>
-                            <ul>
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Customer Service</a></li>
-                                <li><a href="#">Our Sitemap</a></li>
-                                <li><a href="#">Terms &amp; Conditions</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Delivery Information</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12 col-sm-12">
-                        <div class="footer-link-contact">
-                            <h4>Contact Us</h4>
-                            <ul>
-                                <li>
-                                    <p><i class="fas fa-map-marker-alt"></i>Address: Thon 3 - Trung Mau Commune<br>Gia Lam District<br> Ha Noi Capital </p>
-                                </li>
-                                <li>
-                                    <p><i class="fas fa-phone-square"></i>Phone: <a href="tel:+1-888705770">+84 393 946 293</a></p>
-                                </li>
-                                <li>
-                                    <p><i class="fas fa-envelope"></i>Email: <a href="mailto:contactinfo@gmail.com">hatavn93@gmail.com</a></p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- End Footer  -->
+<button href="#" id="back-to-top" class="hvr-hover" title="Back to top" style="display: none;">⇪</button>
 
-    <!-- Start copyright  -->
-    <div class="footer-copyright">
-        <p class="footer-company">All Rights Reserved. &copy; 2021 <a href="#">-FANNoFan Shop</a>-Design By :
-            <a href="https://html.design/">Hoang Ha</a></p>
-    </div>
-    <!-- End copyright  -->
+<!-- ALL JS FILES -->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- ALL PLUGINS -->
+<script src="js/jquery.superslides.min.js"></script>
+<script src="js/bootstrap-select.js"></script>
+<script src="js/inewsticker.js"></script>
+<script src="js/bootsnav.js"></script>
+<script src="js/images-loded.min.js"></script>
+<script src="js/isotope.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/baguetteBox.min.js"></script>
+<script src="js/form-validator.min.js"></script>
+<script src="js/contact-form-script.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/script.js"></script>
+<script src="js/cart3.js"></script>
+</body>
 
-
-    <button href="#" class="hvr-hover" id="back-to-top" title="Back to top" style="display: none;">⇪</button>
-
-    <!-- ALL JS FILES -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <!-- ALL PLUGINS -->
-    <script src="js/jquery.superslides.min.js"></script>
-    <script src="js/bootstrap-select.js"></script>
-    <script src="js/inewsticker.js"></script>
-    <script src="js/bootsnav.js"></script>
-    <script src="js/images-loded.min.js"></script>
-    <script src="js/isotope.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/baguetteBox.min.js"></script>
-    <script src="js/form-validator.min.js"></script>
-    <script src="js/contact-form-script.js"></script>
-    <script src="js/custom.js"></script>
-    <script src="js/script.js"></script>
-    </body>
-
-    </html>
+</html>

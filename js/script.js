@@ -60,3 +60,11 @@ slider.oninput = function() {
 }
 
 
+
+
+
+
+
+
+
+
