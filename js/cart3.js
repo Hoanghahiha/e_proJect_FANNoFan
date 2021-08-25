@@ -27,7 +27,7 @@ function ready() {
 }
 
 function purchaseClicked() {
-    alert('You must login or register first')
+    alert('You are being redirected to the Checkout page')
 }
 
 function removeCartItem(event) {
@@ -144,11 +144,13 @@ function updateCartTotal() {
 function myFunctionalert() {
     alert("You must login or register first")
 }
+function myFunctionalertlogin() {
+    alert("Login successful, you are redirected to your account page")
+}
 /* Checkout alert */
 function mycheckoutalert(){
     alert("Thank you for using our product. Your order will be responded within the next 24 hours. You are being redirected to the product page")
 }
-
 
 /* remove div */
 

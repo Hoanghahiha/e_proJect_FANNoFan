@@ -212,15 +212,14 @@
                     <div class="right-product-box">
                         <div class="product-item-filter row">
                             <div class="col-12 col-sm-8 text-center text-sm-left">
-                                <div class="toolbar-sorter-right">
-                                    <span>Sort by </span>
-                                    <select id="basic3" class="selectpicker show-tick form-control" data-placeholder="$ USD">
-									<option data-display="Select" data-filter="*">Nothing</option>
-									<option value="1" data-filter="mostpeople">Popularity</option>
-									<option value="4" data-filter="selling">Best Selling</option>
-								</select>
+                                <div class="special-menu1 text-center">
+                                    <span style="padding-right: 10px">Sort by:</span>
+                                    <div class="button-group filter-button-group">
+                                        <button class="active" data-filter="*">Top Search</button>
+                                        <button data-filter=".top-featured">Top Featured</button>
+                                        <button data-filter=".best-seller">Best Seller</button>
+                                    </div>
                                 </div>
-                                <p>Showing all 9 results</p>
                             </div>
                             <div class="col-12 col-sm-4 text-center text-sm-right">
                                 <ul class="nav nav-tabs ml-auto">
@@ -237,8 +236,8 @@
                         <div class="product-categorie-box">
                             <div class="tab-content">
                                 <div role="tabpanel" class="tab-pane fade show active" id="grid-view">
-                                    <div class="row">
-                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4" data-group="mostpeople">
+                                    <div class="row special-list">
+                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 best-seller ceilingfan special-grid ">
                                             <div class="products-single fix">
                                                 <div class="shop-item">
                                                     <div class="box-img-hover">
@@ -265,7 +264,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 best-seller ceilingfan special-grid">
                                             <div class="products-single fix">
                                                 <div class="shop-item">
                                                     <div class="box-img-hover">
@@ -292,7 +291,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 best-seller ceilingfan special-grid">
                                             <div class="products-single fix">
                                                 <div class="shop-item">
                                                     <div class="box-img-hover">
@@ -319,7 +318,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 top-featured ceilingfan special-grid">
                                             <div class="products-single fix">
                                                 <div class="shop-item">
                                                     <div class="box-img-hover">
@@ -346,7 +345,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 top-featured treefan special-grid">
                                             <div class="products-single fix">
                                                 <div class="shop-item">
                                                     <div class="box-img-hover">
@@ -373,7 +372,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 top-featured tablefan special-grid">
                                             <div class="products-single fix">
                                                 <div class="shop-item">
                                                     <div class="box-img-hover">
@@ -400,7 +399,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 top-featured tablefan special-grid">
                                             <div class="products-single fix">
                                                 <div class="shop-item">
                                                     <div class="box-img-hover">
@@ -427,7 +426,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 top-featured treefan special-grid">
                                             <div class="products-single fix">
                                                 <div class="shop-item">
                                                     <div class="box-img-hover">
@@ -454,7 +453,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 top-featured airfan special-grid">
                                             <div class="products-single fix">
                                                 <div class="shop-item">
                                                     <div class="box-img-hover">
@@ -483,8 +482,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div role="tabpanel" class="tab-pane fade" id="list-view">
-                                    <div class="list-view-box">
+                                <div role="tabpanel" class="tab-pane fade special-list" id="list-view">
+                                    <div class="list-view-box top-featured ceilingfan special-grid">
                                         <div class="row">
                                             <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
                                                 <div class="products-single fix">
@@ -513,7 +512,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="list-view-box">
+                                    <div class="list-view-box top-featured ceilingfan special-grid">
                                         <div class="row">
                                             <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
                                                 <div class="products-single fix">
@@ -542,7 +541,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="list-view-box">
+                                    <div class="list-view-box best-seller ceilingfan special-grid">
                                         <div class="row">
                                             <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4">
                                                 <div class="products-single fix">
@@ -593,20 +592,15 @@
                                     <a class="list-group-item list-group-item-action" href="#sub-men1" data-toggle="collapse" aria-expanded="true" aria-controls="sub-men1">Fan<small class="text-muted">(9)</small>
 								</a>
                                     <div class="collapse show" id="sub-men1" data-parent="#list-group-men">
-                                        <div class="list-group">
-                                            <a href="#" class="list-group-item list-group-item-action active">Ceiling Fan <small class="text-muted">(4)</small></a>
-                                            <a href="#" class="list-group-item list-group-item-action">Tree Fan <small class="text-muted">(1)</small></a>
-                                            <a href="#" class="list-group-item list-group-item-action">Oil Fan <small class="text-muted">(1)</small></a>
-                                            <a href="#" class="list-group-item list-group-item-action">Fan without the propeller <small class="text-muted">(1)</small></a>
-                                            <a href="#" class="list-group-item list-group-item-action">Charged Fan <small class="text-muted">(1)</small></a>
-                                            <a href="#" class="list-group-item list-group-item-action">Steam Fan <small class="text-muted">(1)</small></a>
+                                        <div class="list-group special-menu1">
+                                            <button class="list-group-item list-group-item-action active" data-filter=".ceilingfan">Ceiling Fan <small class="text-muted">(4)</small></button>
+                                            <button class="list-group-item list-group-item-action" data-filter=".treefan">Tree Fan <small class="text-muted">(2)</small></button>
+                                            <button class="list-group-item list-group-item-action" data-filter=".tablefan">Table Fan <small class="text-muted">(2)</small></button>
+                                            <button class="list-group-item list-group-item-action" data-filter=".airfan">Air Conditioner Fan <small class="text-muted">(1)</small></button>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="list-group-collapse sub-men">
-                                    <a class="list-group-item list-group-item-action" href="#sub-men2" data-toggle="collapse" aria-expanded="false" aria-controls="sub-men2">Fan Button
-								<small class="text-muted">(50)</small>
-								</a>
                                     <div class="collapse" id="sub-men2" data-parent="#list-group-men">
                                         <div class="list-group">
                                             <a href="#" class="list-group-item list-group-item-action">Propeller <small class="text-muted">(0)</small></a>
@@ -615,9 +609,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <a href="#" class="list-group-item list-group-item-action"> Box Fan  <small class="text-muted">(100) </small></a>
-                                <a href="#" class="list-group-item list-group-item-action"> Fan Button <small class="text-muted">(11)</small></a>
-                                <a href="#" class="list-group-item list-group-item-action"> Fanlight <small class="text-muted">(22)</small></a>
+                                <a href="#" class="list-group-item list-group-item-action"> Box Fan  <small class="text-muted">(0) </small></a>
+                                <a href="#" class="list-group-item list-group-item-action"> Fan Button <small class="text-muted">(0)</small></a>
+                                <a href="#" class="list-group-item list-group-item-action"> Fanlight <small class="text-muted">(0)</small></a>
                             </div>
                         </div>
                         <div class="filter-price-left">
@@ -649,14 +643,11 @@
                             <div class="title-left">
                                 <h3>Tags</h3>
                             </div>
-                            <div class="fw-tags">
-                                <a href="#">Ceiling Fan</a>
-                                <a href="#">Tree Fan</a>
-                                <a href="#">Table Fan</a>
-                                <a href="#">Propeller</a>
-                                <a href="#">Condition Fan</a>
-                                <a href="#">Box Fan</a>
-                                <a href="#">Fan Light</a>
+                            <div class="fw-tags special-menu1">
+                                <button class="hvr-hover1 btn1" data-filter=".ceilingfan">Ceiling Fan</button>
+                                <button class="hvr-hover1 btn1" data-filter=".treefan">Tree Fan</button>
+                                <button class="hvr-hover1 btn1" data-filter=".tablefan">Table Fan</button>
+                                <button class="hvr-hover1 btn1" data-filter=".airfan">Air Condition Fan</button>
                             </div>
                         </div>
                     </div>

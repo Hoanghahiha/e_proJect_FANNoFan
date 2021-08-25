@@ -663,6 +663,48 @@
  .hvr-hover{
 	 overflow: hidden;
 }
+
+.hvr-hover1{
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    background: #5ab337;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    border-radius: 0;
+}
+.hvr-hover1::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #5ab337;
+    border-radius: 100%;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.hvr-hover1:hover::after{
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    color: #ffffff;
+}
+.hvr-hover1{
+    overflow: hidden;
+}
  ul.cart-list > li.total > .btn:hover{
      color: #ffffff;
 }
@@ -875,6 +917,9 @@
 }
  .special-menu{
      margin-bottom: 40px;
+}
+.special-menu1{
+    margin-bottom: 0px;
 }
  .filter-button-group{
      display: inline-block;
@@ -2009,7 +2054,7 @@
      font-size: 16px;
 }
  .quantity-box input{
-     width: 60px;
+     width: 70px;
      border: 2px solid #000000;
      text-align: center;
 }
@@ -2515,9 +2560,6 @@
      border-radius: 0px;
      color: #ffffff;
 }
- .quantity-box input{
-     width: 100%;
-}
  .price-box-bar{
      margin-bottom: 30px;
 }
@@ -2824,41 +2866,37 @@
 }
 
 .btn-danger {
-    color: white;
-    background-color: #5ab337;
+    color: grey;
     border: none;
     margin-left: 200px;
 }
-.btn-danger a:hover{
-    background-color: black;
+.btn-danger i:hover{
+    background-color: #5ab337;
 }
 @media (max-width: 1200px){
     .btn-danger {
-        color: white;
-        background-color: #5ab337;
+        color: grey;
         border: none;
         margin-left: 190px;
     }
 }
 @media (max-width: 992px) {
     .btn-danger {
-        color: white;
-        background-color: #5ab337;
+        color: grey;
         border: none;
         margin-left: 90px;
     }
 }
 @media (max-width: 767px) {
     .btn-danger {
-        color: white;
-        background-color: #5ab337;
+        color: grey;
         border: none;
         margin-left: 10px;
 
     }
 }
 .btn-danger:hover {
-    background-color: #5ab337;
+    color: #5ab337;
 }
 
 .cart-quantity-input {
@@ -3338,6 +3376,18 @@
     background-color: black;
 }
 
+.btn1{
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #9f9f9f;!important;
+    color: gray;
+    background-color: white;
+    font-size: 16px;
+}
+
+.btn1:hover{
+    color: #FFFFFF;
+}
 
 
 
